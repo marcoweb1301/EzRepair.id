@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EzRepair.id</title>
+    <link rel="stylesheet" href="style_selecttukang.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- <center><h1 style="font-family: 'Bakbak One', cursive">Silahkan isi data anda di bawah ini !</h1></center> -->
+    <br />
+    <center>
+      <div class="formulir">
+        <center><h1 style="font-family: 'Bakbak One', cursive">Silahkan isi data anda di bawah ini !</h1></center>
+        <label for="nama">Nama:</label>
+        <input type="text" placeholder="Masukkan nama..." name="nama" class="form_nama form" autocomplete="off" /><br /><br />
+        <label for="umur">Umur:</label>
+        <input type="number" placeholder="Masukkan umur..." class="form_umur form" /><br /><br />
+        <label for="projek_selesai">Projek yang sudah di selesaikan:</label>
+        <input type="number" placeholder="Masukkan jumlah projek yang sudah di selesaikan..." class="form_projekselesai form" /><br /><br />
+        <label for="lokasi">Lokasi tempat tinggal:</label>
+        <input type="text" placeholder="Masukkan lokasi tempat tinggal..." class="form_lokasi form" /><br /><br />
+        <label for="nomor_telepon">Nomor telepon:</label>
+        <input type="number" placeholder="Masukkan nomor telepon..." class="form_nomortelepon form" /><br /><br />
+        <button onclick="kirim()" class="btn_kirim">Daftar sekarang !</button>
+        <p id="p_nama"></p>
+        <p id="p_umur"></p>
+        <p id="p_projek"></p>
+        <p id="p_lokasi"></p>
+        <p id="p_nomor_telepon"></p>
+        <p id="p_konfirmasi"></p>
+      </div>
+    </center>
+
+    <script src="script_selectukang.js"></script>
+  </body>
+</html>

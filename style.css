@@ -1,0 +1,397 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* STYLE UNTUK BAGIAN HEADER */
+body {
+  font-family: montserrat;
+}
+
+nav {
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.img_palu {
+  width: 450px;
+  height: 450px;
+  margin-top: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.keterangan_utama {
+  background-color: #5b99fc;
+  padding: 10px;
+}
+
+.paragraf_keterangan {
+  margin-top: 10px;
+}
+
+/* STYLE UNTUK BAGIAN BENEFIT */
+.h1_benefit {
+  margin-top: 30px;
+}
+
+.container_benefit {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 20px;
+  justify-content: center;
+  grid-gap: 20%;
+}
+
+.col1 {
+  width: 25vw;
+  height: 350px;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 2px 4px 12px 10px #cccac6;
+}
+
+.col2 {
+  width: 30vw;
+  height: 350px;
+  background-color: white;
+}
+
+.col2 p {
+  text-align: left;
+}
+
+.card1_img {
+  width: 68%;
+  height: 330px;
+}
+
+.img_2 {
+  transform: translateY(-130px);
+}
+
+.text_2 {
+  transform: translateY(-130px);
+}
+
+.img_3 {
+  transform: translateY(-250px);
+}
+
+.text_3 {
+  transform: translateY(-250px);
+}
+
+.blank {
+  width: 200px;
+  height: 120px;
+}
+
+/* STYLE UNTUK BAGIAN DAFTAR */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #5c6664;
+  background-image: none;
+  flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #5c6664;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #2b2e2e;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+.select:hover::after {
+  color: #23b499;
+}
+
+.btn_pendaftaran {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #f27a46;
+  border: none;
+}
+
+.btn_pendaftaran:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* STYLE UNTUK BAGIAN FOOTER */
+div.footer {
+  background-color: #5b99fc;
+  margin-top: 25px;
+  padding: 15px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.link_instagram {
+  color: black;
+}
+
+.link_instagram:hover {
+  text-decoration: underline;
+}
+
+.footer img {
+  margin-right: 5px;
+  transform: translateY(4px);
+}
+
+.p_keterangan_pembuat {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a.active,
+  a:hover {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .col1 {
+    width: 40vw;
+  }
+
+  .col2 {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .container_benefit {
+    grid-gap: 15%;
+  }
+
+  .col1 {
+    width: 42vw;
+  }
+
+  .col2 {
+    width: 42vw;
+  }
+
+  .h1_daftar {
+    transform: translateY(-100px);
+  }
+
+  .select,
+  .btn_pendaftaran {
+    transform: translateY(-100px);
+  }
+}
+
+@media (max-width: 450px) {
+  .img_palu {
+    width: 70vw;
+    height: 300px;
+  }
+
+  .img_1 {
+    grid-area: image1;
+  }
+
+  .img_2 {
+    grid-area: image2;
+    transform: translateY(-750px);
+  }
+
+  .img_3 {
+    grid-area: image3;
+    transform: translateY(-1510px);
+  }
+
+  .text_1 {
+    grid-area: text1;
+    transform: translateY(-290px);
+    margin-bottom: 20px;
+  }
+
+  .text_2 {
+    grid-area: text2;
+    transform: translateY(-1040px);
+    margin-bottom: 20px;
+  }
+
+  .text_3 {
+    grid-area: text3;
+    transform: translateY(-1810px);
+  }
+
+  .container_benefit {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      'image1'
+      'text1'
+      'image2'
+      'text2'
+      'image3'
+      'text3';
+  }
+
+  .col1 {
+    width: 80vw;
+  }
+
+  .col2 {
+    width: 80vw;
+    margin-bottom: 30px;
+  }
+
+  .blank {
+    display: none;
+  }
+
+  .h1_daftar {
+    transform: translateY(-380px);
+  }
+
+  div.select {
+    transform: translateY(-400px);
+  }
+
+  .btn_pendaftaran {
+    transform: translateY(-400px);
+  }
+
+  .h1_daftar {
+    transform: translateY(-200px);
+  }
+
+  div.select {
+    transform: translateY(-165px);
+  }
+
+  .btn_pendaftaran {
+    transform: translateY(-150px);
+  }
+}
